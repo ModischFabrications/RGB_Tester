@@ -53,7 +53,7 @@ enum USER_BRIGHTNESS
 void setup()
 {
   // init hardware
-
+  pinMode(PIN_LEDS, OUTPUT);
   FastLED.addLeds<WS2812B, PIN_LEDS, GRB>(leds, N_LEDS);
 
   // init subcomponents
